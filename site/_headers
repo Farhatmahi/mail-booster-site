@@ -1,0 +1,9 @@
+# Cloudflare Pages headers. https://developers.cloudflare.com/pages/configuration/headers/
+
+# The font never changes under the same name, so browsers can keep it for a year.
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
